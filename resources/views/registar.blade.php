@@ -2,7 +2,7 @@
 @section("conteudo")
 
 <div class="container">
-    <h2>Formulário de registo</h2>
+    <h2>Formulário de registo/ actualização</h2>
     <form action="{{url('submeter')}}" method="post">
         {{csrf_field()}}
         <div class="form-group">

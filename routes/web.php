@@ -17,5 +17,7 @@ Route::group(["prefix" => "/"], function() {
     Route::get("/registar", "EventoController@registar");
     
     Route::post("/submeter", "EventoController@submeter");
+    
+    Route::get("/remover/{id}", "EventoController@remover");
 }
 );
