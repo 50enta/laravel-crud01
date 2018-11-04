@@ -9,14 +9,14 @@
         <li class="list-group-item active"> {{ $ev->titulo }} <span class="badge">{{ $ev->bilhetes }} Bilhetes</span></li>
         <li class="list-group-item">Categoria: {{ $ev->categoria }} 
             <span class="badge"> 
-                <a href="{{url('/remover/'.$ev->id)}}}}" class="btn btn-default btn-sm">
+                <a href="{{url('/remover/'.$ev->id)}}" class="btn btn-default btn-sm">
                     <span class="glyphicon glyphicon-trash"></span> Excluir
                 </a>
             </span>
         </li>
         <li class="list-group-item">Código:{{ $ev->id }} 
             <span class="badge">
-                <a href="#" class="btn btn-danger btn-sm">
+                <a href="{{url('/remover/'.$ev->id)}}" class="btn btn-danger btn-sm">
                     <span class="glyphicon glyphicon-heart-empty"></span> Gostar
                 </a>
             </span>

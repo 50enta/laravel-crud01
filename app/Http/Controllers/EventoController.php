@@ -37,11 +37,18 @@ class EventoController extends Controller {
             return redirect("/")->with('message', "Sucesso!");
         }
     }
-
+    
     function remover($id) {
         $evento = Evento::find($id);
         $evento->delete();
         return redirect("/")->with('message', "Sucesso!");
     }
 
+
+    function likar($id){
+        $evento = Evento::find($id);
+        $evento->likar();
+        $this->submeter($evento);
+        return redirect("/")->with('message', "Sucesso!");
+    }
 }

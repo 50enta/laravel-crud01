@@ -11,7 +11,7 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <style>
-             .badge{
+             .badge {
                 background-color: white;
             }
         </style>
@@ -27,8 +27,7 @@ and open the template in the editor.
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="{{url('/')}}">Principal</a></li>
                         <li><a href="{{url('/registar')}}">Registar</a></li>
-                        <!--                        <li><a href="{{url('/comprar')}}">Comprar</a></li>-->
-                        <!--<li><a href="#">Page 3</a></li>-->
+                        
                     </ul>
                 </div>
             </nav>

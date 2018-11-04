@@ -12,6 +12,7 @@
  */
 
 Route::group(["prefix" => "/"], function() {
+  
     Route::get("/", "EventoController@listar");
     
     Route::get("/registar", "EventoController@registar");
@@ -19,5 +20,7 @@ Route::group(["prefix" => "/"], function() {
     Route::post("/submeter", "EventoController@submeter");
     
     Route::get("/remover/{id}", "EventoController@remover");
+
+    Route::get('likar/{id}', 'EventoController@likar');
 }
 );

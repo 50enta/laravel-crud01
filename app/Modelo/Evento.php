@@ -10,4 +10,8 @@ class Evento extends Model
     protected $fillable = [
         'id', 'apagado', 'titulo', 'categoria', 'bilhetes'
     ];
+
+    function likar(){
+    	$this->likes++;
+    }
 }
